@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Self Checkout Version 2</title>
+</head>
+<body>
+<h1>Self Checkout Version 2</h1>
+<form action="/" method="post">
+    
+    Enter item price <input type="text" value="" id="price">
+    <br/>
+    Enter item quantity <input type="text" value="" id="quantity">
+    <br/>
+    
+    
+    <input type="submit" value="queue" name="button" onclick="itemQueue()">
+    <br/>
+    
+    <input type="submit" value="checkout" name="button" onclick="checkTotal()">
+    <br/>
+    
+</form>
+<div id="results"></div>
+
+</body>
+<script src="selfCheckOutVar2.js"></script>
+</html>

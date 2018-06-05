@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Paint Calculator</title>
+</head>
+<body>
+<h1>Paint Calculato</h1>
+    
+    <input type="radio" name="button" onchange="checkVisibility()" id="rect"> Rectangle <br>
+    <input type="radio" name="button" onchange="checkVisibility()" id="circle"> Circle <br>
+    
+<form action="/" method="post" id="squareForm" hidden="hidden">
+    What is the length of the ceiling <input type="text" value="" id="length">
+    <br/>
+    What is the width of the ceiling <input type="text" value="" id="width">
+    <br/>
+         
+    <input type="submit" value="enter" name="button" onclick="paintMath()"
+    <br/>
+</form>
+    
+<form action="/" method="post" id="circleForm" hidden="hidden">
+    What is the diameter of the ceiling <input type="text" value="" id="diameter">
+    <br/>
+             
+    <input type="submit" value="enter" name="button" onclick="paintMath()"
+    <br/>
+</form>
+<div id="results"></div>
+
+</body>
+<script src="PaintCalculator.js"></script>
+</html>

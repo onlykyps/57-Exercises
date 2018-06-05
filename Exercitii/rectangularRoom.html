@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rectangular Room</title>
+</head>
+<body>
+<h1>Rectangular Room</h1>
+<form action="/" method="post">
+    What is the length of the room in feet? <input type="text" value="" id="length">
+    <br/>
+    What is the width of the room in feet? <input type="text" value="" id="width">
+    <br/>
+    
+    <input type="radio" name="measurement" id="feet" checked> Feet<br>
+    <input type="radio" name="measurement" id="meters"> Meter<br>
+    
+    <input type="submit" value="enter" name="button" onclick="roomArea()"
+    <br/>
+</form>
+<div id="results"></div>
+
+</body>
+<script src="rectangularRoom.js"></script>
+</html>
